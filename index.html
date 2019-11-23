@@ -121,7 +121,7 @@
   </div>
 
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Cambiar a barra de navegación">
+    <div class="toggle" aria-label="Toggle navigation bar">
       <span class="toggle-line toggle-line-first"></span>
       <span class="toggle-line toggle-line-middle"></span>
       <span class="toggle-line toggle-line-last"></span>
@@ -135,12 +135,12 @@
   <ul id="menu" class="menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Inicio</a>
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archivo</a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
 
   </li>
   </ul>
@@ -169,6 +169,84 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="http://geoyxd.site/2019/11/23/gamit-install/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Yao">
+      <meta itemprop="description" content="想要收获自由之果的人，必须承受维护自由的劳苦。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="geoyxd">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/11/23/gamit-install/" class="post-title-link" itemprop="url">GAMIT软件安装</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-11-23 13:20:09" itemprop="dateCreated datePublished" datetime="2019-11-23T13:20:09+08:00">2019-11-23</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-10-21 16:21:59" itemprop="dateModified" datetime="2019-10-21T16:21:59+08:00">2019-10-21</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/GNSS-GAMIT/" itemprop="url" rel="index">
+                    <span itemprop="name">GNSS - GAMIT</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="1-在Elementary-OS-5-Juno-安装gamit出现了以下错误"><a href="#1-在Elementary-OS-5-Juno-安装gamit出现了以下错误" class="headerlink" title="1 在Elementary OS 5 Juno 安装gamit出现了以下错误"></a>1 在Elementary OS 5 Juno 安装gamit出现了以下错误</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">internal compiler error: 段错误</span><br><span class="line">Please submit a full bug report,</span><br><span class="line">with preprocessed source if appropriate.</span><br><span class="line">See &lt;file:///usr/share/doc/gcc-7/README.Bugs&gt; for instructions.</span><br><span class="line">Makefile:280: recipe for target &apos;yawtab_lib.a(kouba_yaw.o)&apos; failed</span><br><span class="line">make: *** [yawtab_lib.a(kouba_yaw.o)] Error 1</span><br><span class="line">Failure in make_gamit -- install_software terminated</span><br></pre></td></tr></table></figure>
+<p>在Elementary OS 5 Juno是基于最新版本的Ubuntu，其gcc、gFortran版本太高的原因</p>
+<h2 id="2-删掉高版本的gcc-gfortran"><a href="#2-删掉高版本的gcc-gfortran" class="headerlink" title="2 删掉高版本的gcc/gfortran"></a>2 删掉高版本的gcc/gfortran</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">sudo rm gcc</span><br><span class="line">sudo rm gfortran</span><br><span class="line">sudo apt-get install gfortran-5</span><br><span class="line">sudo apt-get install gcc-5</span><br><span class="line">sudo ln -s gfortran-5 gfortran</span><br><span class="line">sudo ln -s gcc-5 gcc</span><br></pre></td></tr></table></figure>
+<h2 id="3-gamit安装成功"><a href="#3-gamit安装成功" class="headerlink" title="3 gamit安装成功"></a>3 gamit安装成功</h2><h3 id="ubnutu最新的也适用"><a href="#ubnutu最新的也适用" class="headerlink" title="ubnutu最新的也适用"></a>ubnutu最新的也适用</h3>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
     <link itemprop="mainEntityOfPage" href="http://geoyxd.site/2019/11/23/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -191,9 +269,27 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Publicado el</span>
+              <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Creado por: 2019-11-23 12:24:56" itemprop="dateCreated datePublished" datetime="2019-11-23T12:24:56+08:00">2019-11-23</time>
+              <time title="Created: 2019-11-23 12:24:56" itemprop="dateCreated datePublished" datetime="2019-11-23T12:24:56+08:00">2019-11-23</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-08-22 07:54:01" itemprop="dateModified" datetime="2019-08-22T07:54:01+08:00">2019-08-22</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%83%A1%E8%A8%80%E4%B9%B1%E8%AF%AD-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" itemprop="url" rel="index">
+                    <span itemprop="name">胡言乱语 - 搭建博客</span>
+                  </a>
+                </span>
             </span>
 
           
@@ -207,20 +303,69 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+          <p>Hello World ！！！</p>
+<p>geoyxd.site终于诞生了<br>期间用过蚂蚁笔记的博客<br>简书、微信公众号<br>体验都不是很好</p>
+<p>geoyxd.site域名买了10年<br>致力于分享测绘技术、相关软件、编程语言</p>
+<p>欢迎关注本博客<br>欢迎向本博客投稿</p>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+      
+    </div>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="http://geoyxd.site/2019/08/21/%E5%85%B3%E4%BA%8E/">
 
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Yao">
+      <meta itemprop="description" content="想要收获自由之果的人，必须承受维护自由的劳苦。">
+    </span>
 
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="geoyxd">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/08/21/%E5%85%B3%E4%BA%8E/" class="post-title-link" itemprop="url">关于</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2019-08-21 15:55:16 / Modified: 15:57:30" itemprop="dateCreated datePublished" datetime="2019-08-21T15:55:16+08:00">2019-08-21</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
       
     </div>
 
@@ -258,10 +403,10 @@
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
-          Tabla de contenidos
+          Table of Contents
         </li>
         <li class="sidebar-nav-overview">
-          Inicio
+          Overview
         </li>
       </ul>
 
@@ -280,9 +425,19 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
-          <span class="site-state-item-name">entradas</span>
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">posts</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
 </div>
@@ -317,10 +472,10 @@
   </span>
   <span class="author" itemprop="copyrightHolder">John Yao</span>
 </div>
-  <div class="powered-by">Creado mediante <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.0.0
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.0.0
   </div>
   <span class="post-meta-divider">|</span>
-  <div class="theme-info">Tema – <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.5.0
+  <div class="theme-info">Theme – <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.5.0
   </div>
 
         
