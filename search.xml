@@ -1,3 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
+  <entry>
+    <title>GAMIT软件安装</title>
+    <url>/2019/10/21/gamit-install/</url>
+    <content><![CDATA[<h2 id="1-在Elementary-OS-5-Juno-安装gamit出现了以下错误"><a href="#1-在Elementary-OS-5-Juno-安装gamit出现了以下错误" class="headerlink" title="1 在Elementary OS 5 Juno 安装gamit出现了以下错误"></a>1 在Elementary OS 5 Juno 安装gamit出现了以下错误</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">internal compiler error: 段错误</span><br><span class="line">Please submit a full bug report,</span><br><span class="line">with preprocessed source if appropriate.</span><br><span class="line">See &lt;file:///usr/share/doc/gcc-7/README.Bugs&gt; for instructions.</span><br><span class="line">Makefile:280: recipe for target &apos;yawtab_lib.a(kouba_yaw.o)&apos; failed</span><br><span class="line">make: *** [yawtab_lib.a(kouba_yaw.o)] Error 1</span><br><span class="line">Failure in make_gamit -- install_software terminated</span><br></pre></td></tr></table></figure>
+
+<p>在Elementary OS 5 Juno是基于最新版本的Ubuntu，其gcc、gFortran版本太高的原因</p>
+<h2 id="2-删掉高版本的gcc-gfortran"><a href="#2-删掉高版本的gcc-gfortran" class="headerlink" title="2 删掉高版本的gcc/gfortran"></a>2 删掉高版本的gcc/gfortran</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo rm gcc</span><br><span class="line">sudo rm gfortran</span><br><span class="line">sudo apt-get install gfortran-5</span><br><span class="line">sudo apt-get install gcc-5</span><br><span class="line">sudo ln -s gfortran-5 gfortran</span><br><span class="line">sudo ln -s gcc-5 gcc</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-gamit安装成功"><a href="#3-gamit安装成功" class="headerlink" title="3 gamit安装成功"></a>3 gamit安装成功</h2><h3 id="ubnutu最新的也适用"><a href="#ubnutu最新的也适用" class="headerlink" title="ubnutu最新的也适用"></a>ubnutu最新的也适用</h3>]]></content>
+      <categories>
+        <category>GNSS - GAMIT</category>
+      </categories>
+      <tags>
+        <tag>gamit</tag>
+        <tag>Test</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2019/08/25/hello-world/</url>
+    <content><![CDATA[<p>Hello World ！！！</p>
+<p>geoyxd.site终于诞生了<br>期间用过蚂蚁笔记的博客<br>简书、微信公众号<br>体验都不是很好</p>
+<p>geoyxd.site域名买了10年<br>致力于分享测绘技术、相关软件、编程语言</p>
+<p>欢迎关注本博客<br>欢迎向本博客投稿</p>
+]]></content>
+      <categories>
+        <category>胡言乱语 - 搭建博客</category>
+      </categories>
+      <tags>
+        <tag>Test</tag>
+        <tag>搭建博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于</title>
+    <url>/2019/08/21/%E5%85%B3%E4%BA%8E/</url>
+    <content><![CDATA[]]></content>
+      <tags>
+        <tag>关于</tag>
+      </tags>
+  </entry>
 </search>
