@@ -123,6 +123,20 @@
 
 
 
+<script>
+    (function () {
+        if ('') {
+            if (prompt('请输入文章密码') !== '') {
+                alert('密码错误！');
+                if (history.length === 1) {
+                    location.replace("http://xxxxxxx.xxx"); // 这里替换成你的首页
+                } else {
+                    history.back();
+                }
+            }
+        }
+    })();
+</script>
 
   <title>geolab</title>
   
@@ -406,7 +420,7 @@
 
       
         
-          <h2 id="出现错误"><a href="#出现错误" class="headerlink" title="出现错误"></a>出现错误</h2><p>最新版本的ubuntu安装gamit</p>
+          <p>在Elementary OS 5 Juno是基于最新版本的Ubuntu，其平台上安装gamit无法成功，是gcc、gFortran版本太高的原因，解决方式如下：</p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2019/10/21/gamit-install/#more" rel="contents">
