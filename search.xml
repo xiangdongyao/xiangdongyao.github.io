@@ -26,16 +26,14 @@
 <h2 id="解决方式"><a href="#解决方式" class="headerlink" title="解决方式"></a>解决方式</h2><h3 id="删掉高版本的gcc-gfortran"><a href="#删掉高版本的gcc-gfortran" class="headerlink" title="删掉高版本的gcc/gfortran"></a>删掉高版本的gcc/gfortran</h3><!--more-->
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo rm gcc</span><br><span class="line">sudo rm gfortran</span><br><span class="line">sudo apt-get install gfortran-5</span><br><span class="line">sudo apt-get install gcc-5</span><br><span class="line">sudo ln -s gfortran-5 gfortran</span><br><span class="line">sudo ln -s gcc-5 gcc</span><br></pre></td></tr></table></figure>
 
-<h2 id="gamit安装成功"><a href="#gamit安装成功" class="headerlink" title="gamit安装成功"></a>gamit安装成功</h2><h3 id="ubnutu最新的也适用"><a href="#ubnutu最新的也适用" class="headerlink" title="ubnutu最新的也适用"></a>ubnutu最新的也适用</h3><!--more-->
-
-
+<h2 id="gamit安装成功"><a href="#gamit安装成功" class="headerlink" title="gamit安装成功"></a>gamit安装成功</h2><h3 id="ubnutu最新的也适用"><a href="#ubnutu最新的也适用" class="headerlink" title="ubnutu最新的也适用"></a>ubnutu最新的也适用</h3><hr>
 ]]></content>
       <categories>
         <category>GNSS - GAMIT</category>
       </categories>
       <tags>
-        <tag>Test</tag>
         <tag>gamit</tag>
+        <tag>Test</tag>
       </tags>
   </entry>
   <entry>
@@ -50,8 +48,8 @@
         <category>胡言乱语 - 搭建博客</category>
       </categories>
       <tags>
-        <tag>搭建博客</tag>
         <tag>Test</tag>
+        <tag>搭建博客</tag>
       </tags>
   </entry>
   <entry>
