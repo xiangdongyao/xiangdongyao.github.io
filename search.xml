@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>install bernese on linux</title>
+    <title>linux系统编译bernese软件</title>
     <url>/2020/03/09/install-bernese-on-linux/</url>
-    <content><![CDATA[<p>[toc]</p>
-<h1 id="linux系统编译bernese软件"><a href="#linux系统编译bernese软件" class="headerlink" title="linux系统编译bernese软件"></a>linux系统编译bernese软件</h1><p>安装bernese5.2遇到两个坑<br>一、Qt的安装<br>二、bernese的按装</p>
+    <content><![CDATA[<p>[toc]<br>安装bernese5.2遇到两个坑<br>一、Qt的安装<br>二、bernese的按装</p>
 <h2 id="1编译平台"><a href="#1编译平台" class="headerlink" title="1编译平台"></a>1编译平台</h2><ul>
 <li>1 Ubuntu18.04</li>
 <li>2 bernese5.2<h2 id="2依赖库"><a href="#2依赖库" class="headerlink" title="2依赖库"></a>2依赖库</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ sudo apt install libx11-dev </span><br><span class="line">$ sudo apt install libxext-dev </span><br><span class="line">$ sudo apt install libxtst-dev </span><br><span class="line">$ sudo apt install zlib1g-dev</span><br></pre></td></tr></table></figure>
@@ -132,8 +131,8 @@
         <category>GNSS - GAMIT</category>
       </categories>
       <tags>
-        <tag>gamit</tag>
         <tag>Test</tag>
+        <tag>gamit</tag>
       </tags>
   </entry>
   <entry>
@@ -148,8 +147,8 @@
         <category>胡言乱语 - 搭建博客</category>
       </categories>
       <tags>
-        <tag>Test</tag>
         <tag>搭建博客</tag>
+        <tag>Test</tag>
       </tags>
   </entry>
   <entry>
