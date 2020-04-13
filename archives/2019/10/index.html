@@ -67,6 +67,12 @@
 		<!-- motto -->
 		<div class="h-body">	
 			
+				<div class="motto text-shadow-pop-left">
+					<p class="content" id="motto-content">获取中...</p>
+					<p>-<p>
+					<p class="author" id="motto-author">Just a minute...</p>
+				</div>
+			
 		</div>
 		
 		<!-- others: such as time... -->			
@@ -414,7 +420,7 @@
 	<div class="copyright">
 		<p>
 			 
-				&copy;2017 - 2020, content by GeoPlus. All Rights Reserved.
+				&copy;2017 - 2020, content by Sariay. All Rights Reserved.
 			
 			
 				<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
@@ -434,6 +440,26 @@
 	</div>		
 </footer>
 		
+	<!-- Local or hitokoto! -->
+
+	<script src="/plugin/motto/motto.js"></script>
+	
+	<script type="text/javascript">
+		(function motto(){
+			let mottoText = getMingYanContent().split('</br> - </br>'),
+			
+			mottoTextContent = mottoText[0]?mottoText[0]:'请刷新...',
+			
+			mottoTextFrom = mottoText[1]?mottoText[1]:'one/一个';
+			
+			mottoTextContent = mottoTextContent.trim().substring(0, 100);
+		
+			$("#motto-content").html( mottoTextContent);
+			$("#motto-author").html( mottoTextFrom  );
+		})();	
+	</script>	
+
+
 
 <!-- love effect -->
 
