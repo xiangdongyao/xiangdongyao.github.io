@@ -1,102 +1,181 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
+
+<!-- Head tag -->
 <head><meta name="generator" content="Hexo 3.9.0">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-    <title>geoyxd</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/gitment.css">
-    <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_859455_eaq7v6w8ktj.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!--Description-->
+  
+  <meta name="description" content="想要收获自由之果的人，必须承受维护自由的劳苦。">
+  
+
+  <!--Author-->
+  
+  <meta name="author" content="Yao">
+  
+
+  <!--Open Graph Title-->
+  
+      <meta property="og:title" content="linux系统编译bernese软件">
+  
+  <!--Open Graph Description-->
+  
+      <meta property="og:description" content="想要收获自由之果的人，必须承受维护自由的劳苦。">
+  
+  <!--Open Graph Site Name-->
+  <meta property="og:site_name" content="geoyxd">
+  <!--Type page-->
+  
+      <meta property="og:type" content="article">
+  
+  <!--Page Cover-->
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- 百度统计 -->
+    <script>
+	var _hmt = _hmt || [];
+	(function() {
+  	var hm = document.createElement("script");
+  	hm.src = "https://hm.baidu.com/hm.js?c0451e16533956173997b85f7a8de666";
+  	var s = document.getElementsByTagName("script")[0]; 
+  	s.parentNode.insertBefore(hm, s);
+	})();
+    </script>
+  <!-- Title -->
+  
+  <title>linux系统编译bernese软件 - geoyxd</title>
+
+
+  <link rel="shortcut icon" href="/favicon.ico">
+    <!--font-awesome-->
+  <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Custom CSS/Sass -->
+  <link rel="stylesheet" href="/css/style.css">
+
 </head>
+
+
 <body>
-<header class="header">
-    <div class="header-inner">
-        <div class="header-title">
 
-        </div>
-        <nav class="header-nav">
-            
-            <a href="/" class="header-nav-link" >
+  <!-- Nav -->
+  <header class="site-header">
+  <div class="header-inside">
+    
+    <div class="logo">
+      <a href="/" rel="home">
+        
+        <img src="http://oct3pmpde.bkt.clouddn.com/timg.jpg" alt="geoyxd" height="60">
+        
+      </a>
+    </div>
+    <a class="header-name" href="/">
+            <span>geoyxd</span>
+            的部落宅
+        </a>
+    <!-- navbar -->
+    <nav class="navbar">
+      <!--  nav links -->
+      <div class="collapse">
+        <ul class="navbar-nav">
+          
+          
+            <li>
+              <a href="/.">
+                
+                  <i class="fa fa-home "></i>
+                
                 首页
-            </a>
-            
-
-            
-            <a href="/archives" class="header-nav-link">
+              </a>
+            </li>
+          
+            <li>
+              <a href="/archives">
+                
+                  <i class="fa fa-archive "></i>
+                
                 归档
-            </a>
-            
-
-            
-            <a href="/tags" class="header-nav-link">
-                标签
-            </a>
-            
-
-            
-        </nav>
-    </div>
-</header>
-<header class="mobile-header">
-    <div class="mobile-nav">
-        <div class="mobile-nav-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="mobile-nav-title">
-            <a href="/" class="mobile-nav-title-link">Yao's Blog</a>
-        </div>
-
-    </div>
-    <nav class="mobile-menu">
-        <ul class="mobile-menu-list">
-            <li class="mobile-menu-item">
-                <i class="iconfont icon-home"></i>
-                <a href="/" class="mobile-nav-link">首页</a>
+              </a>
             </li>
-            <li class="mobile-menu-item">
-                <i class="iconfont icon-archive"></i>
-                <a href="/archives" class="mobile-nav-link">归档</a>
+          
+            <li>
+              <a href="/about">
+                
+                  <i class="fa fa-user "></i>
+                
+                关于
+              </a>
             </li>
-            <li class="mobile-menu-item">
-                <i class="iconfont icon-tag"></i>
-                <a href="/tags" class="mobile-nav-link">标签</a>
+          
+            <li>
+              <a href="/project">
+                
+                  <i class="fa fa-folder-open "></i>
+                
+                项目
+              </a>
             </li>
-            <li class="mobile-menu-item">
-                <i class="iconfont icon-about"></i>
-                <a href="/about/" class="mobile-nav-link">关于</a>
+          
+            <li>
+              <a href="/photo">
+                
+                  <i class="fa fa-photo "></i>
+                
+                相册
+              </a>
             </li>
+          
+            <li>
+              <a href="/guestbook">
+                
+                  <i class="fa fa-edit "></i>
+                
+                留言
+              </a>
+            </li>
+          
+            <li>
+              <a href="/atom.xml">
+                
+                  <i class="fa fa-send "></i>
+                
+                RSS
+              </a>
+            </li>
+          
         </ul>
+      </div>
+      <!-- /.navbar-collapse -->
     </nav>
-</header>
-<div class="main">
-    <div class="content-inner">
-        <div class="posts">
-    <article class="post-whole">
-        <div class="post-title">
-            <h2 class="title">linux系统编译bernese软件</h2>
-            <div class="post-meta">
-                <span class="post-time">2020-03-09</span>
-                
-                <span class="post-category">
-                    
-                    <a class="category" href="/categories/GNSS-BERNESE/">GNSS - BERNESE</a>
-                    
-                </span>
-                
-                <span class="post-visit"> 阅读次数：<span id="busuanzi_value_page_pv"></span></span>
-            </div>
-        </div>
-        <div class="post-toc" id="post-toc">
-    <strong class="post-toc-title">目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1编译平台"><span class="toc-text">1编译平台</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2依赖库"><span class="toc-text">2依赖库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装-软件"><span class="toc-text">安装 软件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-qt"><span class="toc-text">1 qt</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#下载"><span class="toc-text">下载</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#QT编译失败，编译器参数设置不对，应该加上：-std-gnu-98-参数"><span class="toc-text">QT编译失败，编译器参数设置不对，应该加上：-std=gnu++98 参数</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-g-and-fortran"><span class="toc-text">2 g++and fortran</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#bernese5-2"><span class="toc-text">bernese5.2</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#添加普通用户"><span class="toc-text">添加普通用户</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置环境变量"><span class="toc-text">配置环境变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#卸载qt4"><span class="toc-text">卸载qt4</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考文献"><span class="toc-text">参考文献</span></a></li></ol>
-    <div class="back-to-top" id="back-to-top">
-        <a href="javascript:void(0);">回到顶部</a>
+    <div class="button-wrap">
+      <button class="menu-toggle">Primary Menu</button>
     </div>
-</div>
-        <div class="post-content">
-            <p>安装bernese5.2遇到两个坑<br>一、Qt的安装<br>二、bernese的按装</p>
+  </div>
+</header>
+
+
+  <!-- Main Content -->
+  <div class="content-area">
+  <div class="post">
+    <!-- Post Content -->
+    <div class="container">
+      <article>
+        <!-- Title date & tags -->
+        <div class="post-header">
+          <h1 class="entry-title">
+            linux系统编译bernese软件
+            
+          </h1>
+         
+        </div>
+         <p class="a-posted-on">
+          2020-03-09
+          </p>
+        <!-- Post Main Content -->
+        <div class="entry-content">
+          <p>安装bernese5.2遇到两个坑<br>一、Qt的安装<br>二、bernese的按装</p>
 <a id="more"></a>
 <h2 id="1编译平台"><a href="#1编译平台" class="headerlink" title="1编译平台"></a>1编译平台</h2><ul>
 <li>1 Ubuntu18.04</li>
@@ -186,59 +265,59 @@
 <hr>
 
         </div>
-        
-        <div class="post-tag">
-            
-            <a class="tag" href="/tags/bernese/" title="bernese">bernese</a>
-            
-        </div>
-        
-    </article>
-</div>
-<div class="paginator">
-    
-        
-        
-            <a class="next" href="/2019/12/21/my_2019/">
-                <span class="nav-default">我的2019</span>
-                <span class="nav-mobile">下一篇</span>
-                <i class="iconfont icon-next"></i>
-            </a>
-        
-    
-</div>
-<div id="comment-container"></div>
+      </article>
     </div>
-</div>
-<footer class="footer-social">
+    <!-- Pre or Next -->
     
+	<div class="container" >
+           <ul class="pager">
+    	     
+           
+              <li class="next">
+              <a href="/2019/12/21/my_2019/" rel="prev">上一篇</a>
+            </li>
+           
+          </ul>
+       </div>
+　　　　<!-- Comments -->
+    <div class="container">
+      
+<section id="comment">
+  <!-- <h1 class="title">Comments</h1> -->
 
-    
+  
+</section>
 
-    
 
-    <div class="footer-copyright">
-        <p class="time-line">
-            &copy;
-            
-            
-            2020
-            &nbsp;<i class="iconfont icon-heart"></i>&nbsp;
-            <a target="_blank" href="https://github.com/iJinxin">Yao</a>
-        </p>
-        <p class="theme-info">
-            Powered by <a target="_blank" href="https://hexo.io">Hexo</a>  |  Theme -
-            <a target="_blank" href="https://github.com/iJinxin/hexo-theme-sky">Sky</a>
-        </p>
     </div>
+   
+　　　　
+  </div>
+</div>
+
+
+  <!-- Footer -->
+  <!-- Footer -->
+<footer class="site-info">
+  <p>
+    <span>geoyxd &copy; 2020</span>
+    
+      <span class="split">|</span>
+      <span>th是个小屁孩的技术小屋</span>
+    
+  </p>
+  <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  本站总访问量<span id="busuanzi_value_site_pv"></span>次
+  本站访客数<span id="busuanzi_value_site_uv"></span>人次
 </footer>
-</body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="/js/index.js"></script>
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-    
 
-</script>
+
+  <!-- After footer scripts -->
+  <!-- scripts -->
+<script src="/js/app.js"></script>
+
+
+
+</body>
+
 </html>
